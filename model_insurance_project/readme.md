@@ -13,26 +13,21 @@ This is a filtered and modified version of the Medical Insurance Price Predictio
 ### Data set
 The parameters used in the dataset are:
 
-- Age
-Age of the insured. Integer quantity.
+| Parameter |Description| Content type |
+|---|----|---|
+|age| Age in years| integer |
+|gender| Male or Female|integer (1 or 2)|
+| bmi | Body mass index | float |
+|no_of_children| Number of children | integer|
+|smoker| Whether smoker or not | integer (0 or 1)|
+|region| Which US region - NW, NE, SW, SE | integer (1,2,3 or 4 respectively)| 
+|charges| Annual Insurance charges in USD | float|
 
-- Gender
-Gender of the insured. This parameter has been mapped to numerical values in the following way.
-(Female = 1, Male = 2).
-
-- BMI
-Body Mass Index of the insured. Float value quantity.
-
-- No_of_Children
-Number of children the insured person has. Integer quantity.
-
-- Smoker
-Whether the insured person is a smoker or not. This parameter has been mapped to numerical values in the following way.
-(smoker = 1, non smoker = 2).
-
-- Region
-Which region of the USA does the insured belong to. This parameter has been mapped to numerical values in the following way.
-(Northwest	1; Northeast	2; Southwest	3; Southeast	4).
-
-- Charges
-Charges for the insurance in USD. Floating value quantity.
+### Setup
+For this lab, we will be using the following libraries:
+* `skillsnetwork` to download the data
+*   [`pandas`](https://pandas.pydata.org/?utm_medium=Exinfluencer&utm_source=Exinfluencer&utm_content=000026UJ&utm_term=10006555&utm_id=NA-SkillsNetwork-Channel-SkillsNetworkCoursesIBMML0187ENSkillsNetwork31430127-2021-01-01) for managing the data.
+*   [`numpy`](https://numpy.org/?utm_medium=Exinfluencer&utm_source=Exinfluencer&utm_content=000026UJ&utm_term=10006555&utm_id=NA-SkillsNetwork-Channel-SkillsNetworkCoursesIBMML0187ENSkillsNetwork31430127-2021-01-01) for mathematical operations.
+*   [`sklearn`](https://scikit-learn.org/stable/?utm_medium=Exinfluencer&utm_source=Exinfluencer&utm_content=000026UJ&utm_term=10006555&utm_id=NA-SkillsNetwork-Channel-SkillsNetworkCoursesIBMML0187ENSkillsNetwork31430127-2021-01-01) for machine learning and machine-learning-pipeline related functions.
+*   [`seaborn`](https://seaborn.pydata.org/?utm_medium=Exinfluencer&utm_source=Exinfluencer&utm_content=000026UJ&utm_term=10006555&utm_id=NA-SkillsNetwork-Channel-SkillsNetworkCoursesIBMML0187ENSkillsNetwork31430127-2021-01-01) for visualizing the data.
+*   [`matplotlib`](https://matplotlib.org/?utm_medium=Exinfluencer&utm_source=Exinfluencer&utm_content=000026UJ&utm_term=10006555&utm_id=NA-SkillsNetwork-Channel-SkillsNetworkCoursesIBMML0187ENSkillsNetwork31430127-2021-01-01) for additional plotting tools.
